@@ -24,10 +24,10 @@ elif sys.version_info[1] == 8:
     INSTALL_PYTHON_REQUIRES.append(django_python_version_install)
 elif sys.version_info[1] == 9:
     # slightly too broad (3.0.11 for v3.0, and 3.1.3 for v3.1) -- may need to fix
-    django_python_version_install = 'Django>=2.2.17,<3.3'
+    django_python_version_install = 'Django>=2.2.17,<4.1'
     INSTALL_PYTHON_REQUIRES.append(django_python_version_install)
 elif sys.version_info[1] == 10:
-    django_python_version_install = 'Django>=3.2.9,<3.3'
+    django_python_version_install = 'Django>=3.2.9,<4.0'
     INSTALL_PYTHON_REQUIRES.append(django_python_version_install)
 
 setup(
@@ -70,6 +70,7 @@ setup(
         'Framework :: Django',
         'Framework :: Django :: 2.2',
         'Framework :: Django :: 3.0',
+        'Framework :: Django :: 4.0',
         'Intended Audience :: Developers',
         'License :: Public Domain',
         'Operating System :: OS Independent',
